@@ -15,9 +15,9 @@ https://huggingface.co/learn/cookbook/en/code_search
 
 A model is the mathematical framework or algorithm used to make predictions or perform specific tasks, such as recognizing images or generating text.
 
-Types of Models: Linear regression, decision trees, neural networks, transformers, etc.
-Applications: Language models like GPT, vision models like ResNet, and multi-modal models like CLIP.
-Key Features: Models are trained on data and rely on optimization techniques to minimize error during prediction.
+- Types of Models: Linear regression, decision trees, neural networks, transformers, etc.
+- Applications: Language models like GPT, vision models like ResNet, and multi-modal models like CLIP.
+- Key Features: Models are trained on data and rely on optimization techniques to minimize error during prediction.
 
 ## What's a Tokenizer?
 
