@@ -11,7 +11,7 @@ To enhance the link between Agility tasks that are a part (children of) Stories 
   - **sentence-transformers/all-MiniLM-L6-v2**: Vectorizes snippet descriptions.
 - **Qdrant (Vector Database)** → Stores vector embeddings for efficient retrieval.
 - **Cosine Similarity Search** → Finds relevant code snippets based on task descriptions.
-- **LLM Contextualization** → Uses retrieved snippets and Agile task details to propose code changes/additions.
+- **LLM Contextualization** → Uses retrieved snippets and task details to propose code changes/additions.
 
 ---
 
