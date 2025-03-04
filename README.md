@@ -3,7 +3,7 @@
 ---
 
 ## 🎯 **Project Goal**
-To enhance the link between Agility tasks (Stories and Defects) and code by leveraging code indexing, embedding models, and LLMs to suggest relevant code changes.
+To enhance the link between Agility Tasks and code by leveraging code indexing, embedding models, and LLMs to suggest relevant code changes.
 
 ---
 
