@@ -1,0 +1,699 @@
+[
+  {
+    "id": 18,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 0,
+      "character": 0
+    },
+    "rangeEnd": {
+      "line": 30,
+      "character": 0
+    },
+    "codeSnippet": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": ""
+  },
+  {
+    "id": 27,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 0,
+      "character": 7
+    },
+    "rangeEnd": {
+      "line": 0,
+      "character": 37
+    },
+    "codeSnippet": "React, { useEffect, useState }",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "import React, { useEffect, useState } from 'react';\r"
+  },
+  {
+    "id": 36,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 0,
+      "character": 16
+    },
+    "rangeEnd": {
+      "line": 0,
+      "character": 25
+    },
+    "codeSnippet": "useEffect",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "import React, { useEffect, useState } from 'react';\r"
+  },
+  {
+    "id": 45,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 0,
+      "character": 27
+    },
+    "rangeEnd": {
+      "line": 0,
+      "character": 35
+    },
+    "codeSnippet": "useState",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "import React, { useEffect, useState } from 'react';\r"
+  },
+  {
+    "id": 54,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 2,
+      "character": 0
+    },
+    "rangeEnd": {
+      "line": 5,
+      "character": 1
+    },
+    "codeSnippet": "interface Todo {\r\n  id: number;\r\n  title: string;\r\n}",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": ""
+  },
+  {
+    "id": 61,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 3,
+      "character": 2
+    },
+    "rangeEnd": {
+      "line": 3,
+      "character": 13
+    },
+    "codeSnippet": "id: number;",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "  id: number;\r"
+  },
+  {
+    "id": 68,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 4,
+      "character": 2
+    },
+    "rangeEnd": {
+      "line": 4,
+      "character": 16
+    },
+    "codeSnippet": "title: string;",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "  title: string;\r"
+  },
+  {
+    "id": 75,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 7,
+      "character": 6
+    },
+    "rangeEnd": {
+      "line": 27,
+      "character": 1
+    },
+    "codeSnippet": "App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n}",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": ""
+  },
+  {
+    "id": 89,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 8,
+      "character": 9
+    },
+    "rangeEnd": {
+      "line": 8,
+      "character": 14
+    },
+    "codeSnippet": "todos",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "  const [todos, setTodos] = useState<Todo[]>([]);\r"
+  },
+  {
+    "id": 96,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 8,
+      "character": 16
+    },
+    "rangeEnd": {
+      "line": 8,
+      "character": 24
+    },
+    "codeSnippet": "setTodos",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "  const [todos, setTodos] = useState<Todo[]>([]);\r"
+  },
+  {
+    "id": 152,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 12,
+      "character": 13
+    },
+    "rangeEnd": {
+      "line": 12,
+      "character": 16
+    },
+    "codeSnippet": "res",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "      .then((res) => res.json())\r"
+  },
+  {
+    "id": 172,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 13,
+      "character": 13
+    },
+    "rangeEnd": {
+      "line": 13,
+      "character": 25
+    },
+    "codeSnippet": "data: Todo[]",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "      .then((data: Todo[]) => setTodos(data))\r"
+  },
+  {
+    "id": 201,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 14,
+      "character": 14
+    },
+    "rangeEnd": {
+      "line": 14,
+      "character": 17
+    },
+    "codeSnippet": "err",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "      .catch((err) => console.error('Error fetching todos:', err));\r"
+  },
+  {
+    "id": 230,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 21,
+      "character": 20
+    },
+    "rangeEnd": {
+      "line": 21,
+      "character": 24
+    },
+    "codeSnippet": "todo",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "        {todos.map((todo) => (\r"
+  },
+  {
+    "id": 237,
+    "language": "typescript",
+    "documentId": 9,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/App.tsx",
+    "rangeStart": {
+      "line": 22,
+      "character": 14
+    },
+    "rangeEnd": {
+      "line": 22,
+      "character": 27
+    },
+    "codeSnippet": "key={todo.id}",
+    "fileContext": "import React, { useEffect, useState } from 'react';\r\n\r\ninterface Todo {\r\n  id: number;\r\n  title: string;\r\n}\r\n\r\nconst App: React.FC = () => {\r\n  const [todos, setTodos] = useState<Todo[]>([]);\r\n\r\n  useEffect(() => {\r\n    fetch('http://localhost:3001/api/todos')\r\n      .then((res) => res.json())\r\n      .then((data: Todo[]) => setTodos(data))\r\n      .catch((err) => console.error('Error fetching todos:', err));\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n      <h1>TO DO</h1>\r\n      <ul>\r\n        {todos.map((todo) => (\r\n          <li key={todo.id}>{todo.title}</li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n",
+    "lineContext": "          <li key={todo.id}>{todo.title}</li>\r"
+  },
+  {
+    "id": 377,
+    "language": "typescript",
+    "documentId": 369,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/index.tsx",
+    "rangeStart": {
+      "line": 0,
+      "character": 0
+    },
+    "rangeEnd": {
+      "line": 13,
+      "character": 0
+    },
+    "codeSnippet": "import React from 'react';\r\nimport { createRoot } from 'react-dom/client';\r\nimport App from './App';\r\n\r\nconst container = document.getElementById('root');\r\nif (!container) throw new Error(\"Could not find root element\");\r\n\r\nconst root = createRoot(container);\r\nroot.render(\r\n  <React.StrictMode>\r\n    <App />\r\n  </React.StrictMode>\r\n);\r\n",
+    "fileContext": "import React from 'react';\r\nimport { createRoot } from 'react-dom/client';\r\nimport App from './App';\r\n\r\nconst container = document.getElementById('root');\r\nif (!container) throw new Error(\"Could not find root element\");\r\n\r\nconst root = createRoot(container);\r\nroot.render(\r\n  <React.StrictMode>\r\n    <App />\r\n  </React.StrictMode>\r\n);\r\n",
+    "lineContext": ""
+  },
+  {
+    "id": 382,
+    "language": "typescript",
+    "documentId": 369,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/index.tsx",
+    "rangeStart": {
+      "line": 0,
+      "character": 7
+    },
+    "rangeEnd": {
+      "line": 0,
+      "character": 12
+    },
+    "codeSnippet": "React",
+    "fileContext": "import React from 'react';\r\nimport { createRoot } from 'react-dom/client';\r\nimport App from './App';\r\n\r\nconst container = document.getElementById('root');\r\nif (!container) throw new Error(\"Could not find root element\");\r\n\r\nconst root = createRoot(container);\r\nroot.render(\r\n  <React.StrictMode>\r\n    <App />\r\n  </React.StrictMode>\r\n);\r\n",
+    "lineContext": "import React from 'react';\r"
+  },
+  {
+    "id": 391,
+    "language": "typescript",
+    "documentId": 369,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/index.tsx",
+    "rangeStart": {
+      "line": 1,
+      "character": 9
+    },
+    "rangeEnd": {
+      "line": 1,
+      "character": 19
+    },
+    "codeSnippet": "createRoot",
+    "fileContext": "import React from 'react';\r\nimport { createRoot } from 'react-dom/client';\r\nimport App from './App';\r\n\r\nconst container = document.getElementById('root');\r\nif (!container) throw new Error(\"Could not find root element\");\r\n\r\nconst root = createRoot(container);\r\nroot.render(\r\n  <React.StrictMode>\r\n    <App />\r\n  </React.StrictMode>\r\n);\r\n",
+    "lineContext": "import { createRoot } from 'react-dom/client';\r"
+  },
+  {
+    "id": 400,
+    "language": "typescript",
+    "documentId": 369,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/index.tsx",
+    "rangeStart": {
+      "line": 2,
+      "character": 7
+    },
+    "rangeEnd": {
+      "line": 2,
+      "character": 10
+    },
+    "codeSnippet": "App",
+    "fileContext": "import React from 'react';\r\nimport { createRoot } from 'react-dom/client';\r\nimport App from './App';\r\n\r\nconst container = document.getElementById('root');\r\nif (!container) throw new Error(\"Could not find root element\");\r\n\r\nconst root = createRoot(container);\r\nroot.render(\r\n  <React.StrictMode>\r\n    <App />\r\n  </React.StrictMode>\r\n);\r\n",
+    "lineContext": "import App from './App';\r"
+  },
+  {
+    "id": 409,
+    "language": "typescript",
+    "documentId": 369,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/index.tsx",
+    "rangeStart": {
+      "line": 4,
+      "character": 6
+    },
+    "rangeEnd": {
+      "line": 4,
+      "character": 49
+    },
+    "codeSnippet": "container = document.getElementById('root')",
+    "fileContext": "import React from 'react';\r\nimport { createRoot } from 'react-dom/client';\r\nimport App from './App';\r\n\r\nconst container = document.getElementById('root');\r\nif (!container) throw new Error(\"Could not find root element\");\r\n\r\nconst root = createRoot(container);\r\nroot.render(\r\n  <React.StrictMode>\r\n    <App />\r\n  </React.StrictMode>\r\n);\r\n",
+    "lineContext": "const container = document.getElementById('root');\r"
+  },
+  {
+    "id": 456,
+    "language": "typescript",
+    "documentId": 369,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/client/src/index.tsx",
+    "rangeStart": {
+      "line": 7,
+      "character": 6
+    },
+    "rangeEnd": {
+      "line": 7,
+      "character": 34
+    },
+    "codeSnippet": "root = createRoot(container)",
+    "fileContext": "import React from 'react';\r\nimport { createRoot } from 'react-dom/client';\r\nimport App from './App';\r\n\r\nconst container = document.getElementById('root');\r\nif (!container) throw new Error(\"Could not find root element\");\r\n\r\nconst root = createRoot(container);\r\nroot.render(\r\n  <React.StrictMode>\r\n    <App />\r\n  </React.StrictMode>\r\n);\r\n",
+    "lineContext": "const root = createRoot(container);\r"
+  },
+  {
+    "id": 829,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 0,
+      "character": 0
+    },
+    "rangeEnd": {
+      "line": 40,
+      "character": 0
+    },
+    "codeSnippet": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": ""
+  },
+  {
+    "id": 834,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 0,
+      "character": 7
+    },
+    "rangeEnd": {
+      "line": 0,
+      "character": 14
+    },
+    "codeSnippet": "express",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "import express from 'express';\r"
+  },
+  {
+    "id": 843,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 1,
+      "character": 7
+    },
+    "rangeEnd": {
+      "line": 1,
+      "character": 11
+    },
+    "codeSnippet": "cors",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "import cors from 'cors';\r"
+  },
+  {
+    "id": 852,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 2,
+      "character": 7
+    },
+    "rangeEnd": {
+      "line": 2,
+      "character": 11
+    },
+    "codeSnippet": "path",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "import path from 'path';\r"
+  },
+  {
+    "id": 861,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 3,
+      "character": 7
+    },
+    "rangeEnd": {
+      "line": 3,
+      "character": 9
+    },
+    "codeSnippet": "fs",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "import fs from 'fs';\r"
+  },
+  {
+    "id": 870,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 5,
+      "character": 6
+    },
+    "rangeEnd": {
+      "line": 5,
+      "character": 21
+    },
+    "codeSnippet": "app = express()",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "const app = express();\r"
+  },
+  {
+    "id": 879,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 6,
+      "character": 6
+    },
+    "rangeEnd": {
+      "line": 6,
+      "character": 37
+    },
+    "codeSnippet": "PORT = process.env.PORT || 3001",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "const PORT = process.env.PORT || 3001;\r"
+  },
+  {
+    "id": 890,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 12,
+      "character": 6
+    },
+    "rangeEnd": {
+      "line": 15,
+      "character": 1
+    },
+    "codeSnippet": "todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n]",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": ""
+  },
+  {
+    "id": 897,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 13,
+      "character": 4
+    },
+    "rangeEnd": {
+      "line": 13,
+      "character": 9
+    },
+    "codeSnippet": "id: 1",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "  { id: 1, title: 'Buy groceries' },\r"
+  },
+  {
+    "id": 904,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 13,
+      "character": 11
+    },
+    "rangeEnd": {
+      "line": 13,
+      "character": 33
+    },
+    "codeSnippet": "title: 'Buy groceries'",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "  { id: 1, title: 'Buy groceries' },\r"
+  },
+  {
+    "id": 911,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 14,
+      "character": 4
+    },
+    "rangeEnd": {
+      "line": 14,
+      "character": 9
+    },
+    "codeSnippet": "id: 2",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "  { id: 2, title: 'Complete project' },\r"
+  },
+  {
+    "id": 918,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 14,
+      "character": 11
+    },
+    "rangeEnd": {
+      "line": 14,
+      "character": 36
+    },
+    "codeSnippet": "title: 'Complete project'",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "  { id: 2, title: 'Complete project' },\r"
+  },
+  {
+    "id": 927,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 18,
+      "character": 23
+    },
+    "rangeEnd": {
+      "line": 18,
+      "character": 26
+    },
+    "codeSnippet": "req",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "app.get('/api/todos', (req, res) => {\r"
+  },
+  {
+    "id": 934,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 18,
+      "character": 28
+    },
+    "rangeEnd": {
+      "line": 18,
+      "character": 31
+    },
+    "codeSnippet": "res",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "app.get('/api/todos', (req, res) => {\r"
+  },
+  {
+    "id": 947,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 22,
+      "character": 24
+    },
+    "rangeEnd": {
+      "line": 22,
+      "character": 27
+    },
+    "codeSnippet": "req",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "app.get('/api/health', (req, res) => {\r"
+  },
+  {
+    "id": 954,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 22,
+      "character": 29
+    },
+    "rangeEnd": {
+      "line": 22,
+      "character": 32
+    },
+    "codeSnippet": "res",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "app.get('/api/health', (req, res) => {\r"
+  },
+  {
+    "id": 963,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 23,
+      "character": 13
+    },
+    "rangeEnd": {
+      "line": 23,
+      "character": 25
+    },
+    "codeSnippet": "status: 'OK'",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "  res.json({ status: 'OK' });\r"
+  },
+  {
+    "id": 970,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 27,
+      "character": 6
+    },
+    "rangeEnd": {
+      "line": 27,
+      "character": 60
+    },
+    "codeSnippet": "buildPath = path.join(__dirname, '../../client/build')",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "const buildPath = path.join(__dirname, '../../client/build');\r"
+  },
+  {
+    "id": 991,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 30,
+      "character": 16
+    },
+    "rangeEnd": {
+      "line": 30,
+      "character": 19
+    },
+    "codeSnippet": "req",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "  app.get('*', (req, res) => {\r"
+  },
+  {
+    "id": 998,
+    "language": "typescript",
+    "documentId": 821,
+    "documentUri": "file:///c:/Digital.ai/fs_todo/server/src/index.ts",
+    "rangeStart": {
+      "line": 30,
+      "character": 21
+    },
+    "rangeEnd": {
+      "line": 30,
+      "character": 24
+    },
+    "codeSnippet": "res",
+    "fileContext": "import express from 'express';\r\nimport cors from 'cors';\r\nimport path from 'path';\r\nimport fs from 'fs';\r\n\r\nconst app = express();\r\nconst PORT = process.env.PORT || 3001;\r\n\r\n// Enable CORS for all routes\r\napp.use(cors());\r\n\r\n// Simple in-memory \"database\" of to-do items.\r\nconst todos = [\r\n  { id: 1, title: 'Buy groceries' },\r\n  { id: 2, title: 'Complete project' },\r\n];\r\n\r\n// API endpoint to get the list of to-dos.\r\napp.get('/api/todos', (req, res) => {\r\n  res.json(todos);\r\n});\r\n\r\napp.get('/api/health', (req, res) => {\r\n  res.json({ status: 'OK' });\r\n});\r\n\r\n// Serve static files if the build folder exists (for production)\r\nconst buildPath = path.join(__dirname, '../../client/build');\r\nif (fs.existsSync(buildPath)) {\r\n  app.use(express.static(buildPath));\r\n  app.get('*', (req, res) => {\r\n    res.sendFile(path.join(buildPath, 'index.html'));\r\n  });\r\n} else {\r\n  console.log('Build folder not found, skipping static file serving.');\r\n}\r\n\r\napp.listen(PORT, () => {\r\n  console.log(`Server is running on http://localhost:${PORT}`);\r\n});\r\n",
+    "lineContext": "  app.get('*', (req, res) => {\r"
+  }
+]

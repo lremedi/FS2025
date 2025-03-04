@@ -1,0 +1,416 @@
+[
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo Title Field",
+    "Description": "Given a Todo item interface\nWhen creating a new todo\nThen it must have a title field of type string\nAnd the title field must be mandatory",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Title Field Validation",
+    "Description": "Given a Todo item title field\nWhen adding a new todo\nThen validate title is not empty\nAnd validate title length is reasonable\nAnd validate title contains valid characters",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Title Field Documentation",
+    "Description": "Given the Todo interface\nWhen reviewing the title field\nThen proper JSDoc documentation should exist\nAnd type constraints should be documented",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Essential React Hooks Setup",
+    "Description": "Given a React TypeScript application\nWhen setting up the core functionality\nThen the following hooks should be imported:\n- Core React library\n- useState hook for state management\n- useEffect hook for side effects\nAnd proper TypeScript types should be maintained",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Optimize React Import Structure",
+    "Description": "Given a React component\nWhen importing React dependencies\nThen only necessary features should be imported\nAnd tree-shaking optimization should be enabled\nAnd proper naming conventions should be followed",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Unnecessary Full React Import",
+    "Description": "Given modern React applications\nWhen JSX is used\nThen full React import may be unnecessary\nAnd import structure should be optimized\nTo reduce bundle size",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement React 18 Root Creation",
+    "Description": "<html><body>Given a React application needs concurrent rendering capabilities\nWhen initializing the application root\nThen createRoot should be implemented with proper container initialization\nAnd strict mode should be enabled\nAnd proper error handling should be in place</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Root Cleanup Management",
+    "Description": "<html><body>Given a React root is created\nWhen the application unmounts\nThen proper cleanup should be implemented\nAnd root.unmount() should be called\nAnd memory leaks should be prevented</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Type Safety in Root Creation",
+    "Description": "<html><body>Given the root creation process\nWhen container element is passed to createRoot\nThen TypeScript types should be properly enforced\nAnd HTMLElement type should be explicitly defined\nTo prevent potential runtime errors</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo List Display",
+    "Description": "Given I am a user\nWhen I open the todo application\nThen I should see a list of todos with their titles",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Loading State to Todo List",
+    "Description": "Given I am a user\nWhen the todo list is fetching data\nThen I should see a loading indicator",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Error Handling UI",
+    "Description": "Given I am a user\nWhen the API request fails\nThen I should see an error message\nBut currently errors are only logged to console",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Configure API URL via Environment",
+    "Description": "Given I am a developer\nWhen I deploy the application\nThen I should be able to configure the API URL through environment variables\nInstead of hardcoded localhost URL",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Define Basic Todo Data Structure",
+    "Description": "<html><body>Feature: Todo Item Data Structure\n\nScenario: Create basic todo interface\nGiven the need for a todo data structure\nWhen implementing the todo interface\nThen it should have a numeric id field\nAnd it should have a string title field</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Completion Status to Todos",
+    "Description": "<html><body>Feature: Enhanced Todo Properties\n\nScenario: Add completion tracking\nGiven the basic todo interface\nWhen extending the interface\nThen add a completed boolean field\nAnd ensure it's optional</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo Item Immutability",
+    "Description": "<html><body>Feature: Todo Immutability\n\nScenario: Make todo properties readonly\nGiven the todo interface\nWhen implementing immutability\nThen add readonly modifier to id field\nAnd add readonly modifier to title field</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement CRUD Operations for Todos",
+    "Description": "Given a todo application\nWhen the API is called\nThen it should support following operations:\n- Create new todo items\n- Update existing todo items\n- Delete todo items\n- List all todo items with pagination",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Database Integration",
+    "Description": "Given the todo application\nWhen storing todo items\nThen they should be persisted in a proper database\nAnd survive server restarts\nAnd support concurrent access",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Error Handling in API Endpoints",
+    "Description": "Given the API endpoints\nWhen an error occurs\nThen proper error responses should be returned\nAnd errors should be logged\nAnd client should receive appropriate status codes",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Request Validation",
+    "Description": "Given the todo API\nWhen receiving requests\nThen input should be validated\nAnd invalid requests should be rejected\nAnd validation errors should be clearly communicated",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Create basic Todo item structure",
+    "Description": "<html><body>Given a todo application needs to store tasks<br/>When creating a new todo item<br/>Then it should have a title field containing the task description<br/>And it should have a unique identifier</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add metadata to Todo items",
+    "Description": "<html><body>Given todo items need more information<br/>When defining the todo item structure<br/>Then it should include creation date<br/>And it should include due date<br/>And it should include priority level<br/>And it should include completion status</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo input validation",
+    "Description": "<html><body>Given users can create todo items<br/>When a todo title is entered<br/>Then it should validate character length<br/>And it should prevent empty titles<br/>And it should sanitize input</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Setup React Root Container Element",
+    "Description": "Given I am setting up a React application\nWhen the application initializes\nThen there should be a root container element with id 'root'\nAnd the element should be properly retrieved from DOM",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Root Element Error Handling",
+    "Description": "Given I am initializing React application\nWhen the root element is not found in DOM\nThen appropriate error should be thrown\nAnd error message should indicate missing root element",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Type Safety for Root Container",
+    "Description": "Given the root container element retrieval\nWhen getting element by ID\nThen the container variable should have explicit TypeScript type definition\nAnd it should be typed as HTMLElement | null",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement unique key identifiers for todo list items",
+    "Description": "Feature: Todo List Item Keys\n\nScenario: Rendering todo list items with unique keys\nGiven I have a list of todo items\nWhen each todo item is rendered\nThen each item should have a unique key prop using todo.id\nAnd React should efficiently update the DOM\n",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add fallback handling for todo item keys",
+    "Description": "Feature: Todo Key Fallback Handling\n\nScenario: Handling missing or invalid todo IDs\nGiven I have todo items with potentially missing IDs\nWhen rendering the todo list\nThen implement a fallback key generation mechanism\nAnd ensure list rendering doesn't break with invalid IDs\n",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing key prop type validation",
+    "Description": "Feature: Key Prop Validation\n\nScenario: Validating todo item key props\nGiven the current implementation lacks type validation\nWhen todo items are rendered\nThen implement proper TypeScript validation for key props\nAnd ensure keys are always numbers as defined in Todo interface\n",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Initialize Express Application Instance",
+    "Description": "Given a new web application project\nWhen initializing the Express framework\nThen a new Express application instance should be created\nAnd it should be stored in the 'app' constant",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Type Safety to Express Instance",
+    "Description": "Given an Express application initialization\nWhen creating the app instance\nThen it should have explicit TypeScript typing\nAnd be defined as express.Application type",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Basic Security Headers",
+    "Description": "Given a new Express application instance\nWhen initializing the server\nThen security middleware like helmet.js should be configured\nAnd basic HTTP security headers should be set",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Base Error Handling",
+    "Description": "Given an Express application setup\nWhen initializing core middleware\nThen error handling middleware should be configured\nAnd it should handle common HTTP errors appropriately",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo Item Base Structure",
+    "Description": "Feature: Todo Item Structure\n\nScenario: Create basic todo item\nGiven I need to store todo items\nWhen I create a todo item\nThen it should have a numeric id\nAnd it should have a title string\n\nScenario: Validate todo item\nGiven I have a todo item\nWhen I check its structure\nThen id should be a positive integer\nAnd title should not be empty",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Type Safety to Todo Items",
+    "Description": "Feature: Todo Item Type Safety\n\nScenario: Implement TypeScript interface\nGiven I have todo items in the system\nWhen I define the todo structure\nThen I should create a TodoItem interface\nAnd it should enforce number type for id\nAnd it should enforce string type for title",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Todo Item Validation",
+    "Description": "Feature: Todo Validation\n\nScenario: Current implementation lacks validation\nGiven the current todo implementation\nWhen creating new todos\nThen there is no validation for unique IDs\nAnd there is no validation for title length\nAnd there is no validation for required fields",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo Item Unique Identifier",
+    "Description": "Feature: Todo Item Identification\n\nScenario: Todo items require unique numeric identifiers\nGiven the Todo application needs to track items\nWhen a todo item is created\nThen it must have a numeric ID field\nAnd the ID must be unique\nAnd the ID must be used as React key for rendering",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Type Safety for Todo IDs",
+    "Description": "Feature: Todo ID Type Safety\n\nScenario: Enforce type checking for todo identifiers\nGiven the Todo interface requires strict typing\nWhen implementing the ID property\nThen it must be defined as number type\nAnd TypeScript must enforce this type checking\nAnd compilation should fail for non-numeric IDs",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing ID Documentation",
+    "Description": "Feature: Code Documentation\n\nScenario: ID property lacks documentation\nGiven the Todo interface has an ID property\nWhen reviewing the code\nThen JSDoc documentation should be present\nAnd documentation should explain ID's purpose and constraints\nBut no documentation exists",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo List Display",
+    "Description": "Given I am a user\nWhen I open the todo application\nThen I should see a list of todos fetched from the API\nAnd each todo should display its title",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Error State Handling",
+    "Description": "Given I am using the todo application\nWhen the API call fails\nThen I should see a user-friendly error message\nAnd not just a console log",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Loading State Indicator",
+    "Description": "Given I am a user\nWhen the todos are being fetched\nThen I should see a loading indicator\nBut currently there is no loading state implementation",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Extract API Service Layer",
+    "Description": "Given I am a developer\nWhen I need to make API calls\nThen I should use a dedicated service layer\nAnd not make direct fetch calls in components",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Basic Health Check Endpoint",
+    "Description": "Feature: Health Check API Endpoint\n\nScenario: Basic Health Status Check\nGiven the application is running\nWhen I make a GET request to '/api/health'\nThen I should receive a JSON response\nAnd the response should contain status 'OK'\n",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Enhanced Health Check Metrics",
+    "Description": "Feature: Enhanced Health Monitoring\n\nScenario: Detailed Health Status Information\nGiven the health check endpoint exists\nWhen I make a GET request to '/api/health'\nThen I should receive extended metrics including\n  | uptime |\n  | timestamp |\n  | version |\n",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Health Check Type Safety",
+    "Description": "Feature: Type-Safe Health Check Response\n\nScenario: Implement TypeScript Interface\nGiven the health check endpoint\nWhen implementing the response structure\nThen it should use a defined HealthResponse interface\nAnd enforce strict typing for the status field\n",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add todo item validation",
+    "Description": "<html>Feature: Todo item validation\n\nScenario: Validate todo title\nGiven a new todo item is being created\nWhen the title is entered\nThen it should enforce minimum length of 3 characters\nAnd it should enforce maximum length of 100 characters\nAnd it should not allow special characters except spaces and hyphens</html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Enhance todo item data structure",
+    "Description": "<html>Feature: Enhanced todo data structure\n\nScenario: Create todo with extended attributes\nGiven a new todo item is created\nWhen saving the todo\nThen it should include due date\nAnd it should include priority level\nAnd it should include status field\nAnd it should include creation timestamp\nAnd it should include last modified timestamp</html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement TypeScript interfaces for todo items",
+    "Description": "<html>Feature: Todo TypeScript interfaces\n\nScenario: Define todo item structure\nGiven the todo application codebase\nWhen implementing todo item interfaces\nThen it should define required and optional fields\nAnd it should enforce type safety\nAnd it should provide code completion support</html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo Data Type Safety",
+    "Description": "Given the todo list implementation\nWhen developing the application\nThen implement TypeScript interface for Todo items\nAnd enforce type checking for id and title fields",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Todo Data Persistence",
+    "Description": "Given the in-memory todo storage\nWhen the server restarts\nThen todo data should persist\nAnd implement proper database storage",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing ID Management System",
+    "Description": "Given the current todo implementation\nWhen adding new todos\nThen IDs could conflict\nAnd there's no auto-increment mechanism",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo Validation",
+    "Description": "Given the todo creation process\nWhen adding or updating todos\nThen validate todo properties\nAnd ensure ID uniqueness\nAnd validate title content",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Setup React 18 Root Component",
+    "Description": "<div>Given a React application needs initialization\nWhen the application starts\nThen it should create a root component using React 18 API\nAnd mount the main App component in StrictMode\nAnd throw error if root element is not found</div>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Error Boundary Protection",
+    "Description": "<div>Given the React application needs error handling\nWhen the App component renders\nThen it should be wrapped in an Error Boundary\nAnd catch runtime errors\nAnd display a fallback UI</div>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Service Worker Registration",
+    "Description": "<div>Given the application needs offline capabilities\nWhen the application initializes\nThen it should register a service worker\nAnd enable PWA functionality\nAnd handle service worker lifecycle events</div>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Root Element Error Handling",
+    "Description": "<div>Given the application is initializing\nWhen the root element is not found in DOM\nThen it throws a basic error message\nBut should provide more detailed error information\nAnd suggest potential fixes to the developer</div>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo Item Structure",
+    "Description": "<html><body>Feature: Todo Item Structure\n\nScenario: Creating basic todo item\nGiven a todo management system\nWhen I create a new todo item\nThen it should have a numeric id\nAnd it should have a title field\n\nScenario: Unique Identification\nGiven a todo list\nWhen I add multiple items\nThen each item should have a unique id</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Todo Item Metadata Fields",
+    "Description": "<html><body>Feature: Enhanced Todo Item Fields\n\nScenario: Adding metadata to todo items\nGiven the basic todo structure\nWhen I enhance the todo item model\nThen it should include completion status\nAnd it should include creation date\nAnd it should include due date\nAnd it should include priority level</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo Type Interface",
+    "Description": "<html><body>Feature: Todo Type Safety\n\nScenario: Creating type interface\nGiven the todo item structure\nWhen I implement TypeScript interface\nThen it should define all required fields\nAnd it should enforce type safety for todo items</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Configure Dynamic Port Assignment",
+    "Description": "<html><body>FEATURE: Dynamic port configuration for server deployment\n\nSCENARIO: Server starts with environment-specified port\nGIVEN the application is being deployed\nWHEN environment variable PORT is set\nTHEN server should use that port number\n\nSCENARIO: Server starts with default port\nGIVEN the application is being deployed\nWHEN no PORT environment variable is set\nTHEN server should use port 3001</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Port Number Type Safety",
+    "Description": "<html><body>FEATURE: Type-safe port number handling\n\nSCENARIO: Validate port number type\nGIVEN the server is starting\nWHEN port number is retrieved from environment\nTHEN it should be converted to number type\nAND validated for valid port range</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Port Validation",
+    "Description": "<html><body>SCENARIO: Invalid port number handling\nGIVEN the server is starting\nWHEN an invalid PORT value is set in environment\nTHEN the application crashes instead of falling back to default\nOR handling the error gracefully</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Todo Data Type Safety",
+    "Description": "<html><body>Feature: Todo Data Type Safety\n\nScenario: Handling API Response Data\nGiven the Todo interface is defined with id and title\nWhen the API returns todo data\nThen the data should be typed as Todo[]\nAnd type safety should be enforced at compilation</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Add Todo Data Validation",
+    "Description": "<html><body>Feature: Todo Data Validation\n\nScenario: Validating API Response\nGiven the API returns response data\nWhen processing the response\nThen validate if data is an array\nAnd check if each item conforms to Todo interface</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Error Handling for Todo Type Mismatches",
+    "Description": "<html><body>Feature: Todo Error Handling\n\nScenario: Type Mismatch in Response\nGiven the API response doesn't match Todo[] type\nWhen processing the response\nThen proper error handling should occur\nAnd user should be notified of the error</body></html>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Configure Build Path Using Environment Variables",
+    "Description": "<div>Given the application needs to serve static files\nWhen the server starts up\nThen the build path should be configurable via environment variables</div>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Story",
+    "Name": "Implement Build Path Validation",
+    "Description": "<div>Given the application needs to access the build directory\nWhen the server initializes\nThen it should validate the build path exists before attempting to use it</div>",
+    "Scope": "Scope:1003"
+  },
+  {
+    "AssetType": "Defect",
+    "Name": "Missing Error Handling for Invalid Build Path",
+    "Description": "<div>Given an invalid build path configuration\nWhen the server attempts to access the build directory\nThen it should properly handle and log the error instead of failing silently</div>",
+    "Scope": "Scope:1003"
+  }
+]
