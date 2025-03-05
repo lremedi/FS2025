@@ -32,7 +32,7 @@ To enhance the link between Agility Tasks and code by leveraging code indexing, 
 
 ### 3️⃣ Vectorization of Code & Descriptions
 - The raw code snippets and descriptions are embedded using **AWS Titan**.
-- Code: `embeddings.py` from https://github.com/lremedi/FS2025/tree/main/embeddings to generate embeddings for code snippets and descriptions, and then pushed to QDrant collection.
+- Code: `embeddings.py` from https://github.com/lremedi/FS2025/tree/main/embeddings to generate embeddings for code snippets and descriptions, and then pushed to QDrant collection using https://api.staging.digital.ai/llm/docs#/default/embeddings_embeddings_post and model `amazon.titan-embed-text-v2:0` through Agility API endpoint.
 
 ### 4️⃣ Storage in Qdrant
 - Both sets of embeddings (code and descriptions) are stored in **Qdrant**, a vector database.
