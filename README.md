@@ -23,12 +23,16 @@ To enhance the link between Agility Tasks and code by leveraging code indexing, 
 ### 1️⃣ LSIF Indexing
 - **Language Agnostic**: LSIF can be used across multiple [programming languages](https://microsoft.github.io/language-server-protocol/implementors/servers/), making it a versatile choice for indexing code in diverse codebases.
 - Extracts code snippets from the repository.
+- Code: `npm run generate-lsif` from https://github.com/lremedi/FS2025/tree/main/snippets to generate codebase graph using https://github.com/microsoft/lsif-node
+- Code: `npm run extract-snippets` from https://github.com/lremedi/FS2025/tree/main/snippets to extract code snippets and its metadata like language, line from/to and file name.
 
 ### 2️⃣ LLM Code Snippet Description
 - Each extracted snippet is processed by an LLM to generate a natural language description.
+- Code: `npm run analyze-snippets` from https://github.com/lremedi/FS2025/tree/main/snippets to generate a description using https://api.staging.digital.ai/llm/docs#/default/chat_completions_chat_completions_post and model `anthropic.claude-3-5-sonnet-20241022-v2:0`
 
 ### 3️⃣ Vectorization of Code & Descriptions
 - The raw code snippets and descriptions are embedded using **AWS Titan**.
+- Code: `embeddings.py` from https://github.com/lremedi/FS2025/tree/main/embeddings to generate embeddings for code snippets and descriptions, and then pushed to QDrant collection.
 
 ### 4️⃣ Storage in Qdrant
 - Both sets of embeddings (code and descriptions) are stored in **Qdrant**, a vector database.
@@ -36,6 +40,7 @@ To enhance the link between Agility Tasks and code by leveraging code indexing, 
 ### 5️⃣ Task-Based Code Retrieval
 - Agility task descriptions are embedded and used to search the Qdrant database.
 - The most relevant code snippets are retrieved.
+- Using QDrant client for .Net Framework (internally using gRPC).
 
 ### 6️⃣ Contextualization & Code Suggestions
 - The retrieved code snippets, task description, and related story/defect descriptions are provided as context to an LLM.
